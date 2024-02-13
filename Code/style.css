@@ -1,0 +1,94 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    background-color: black;
+    color: rgb(3, 255, 3);
+    font-family: ModernDOS-2;
+
+}
+
+
+.container {
+    display: grid; 
+    place-items: center; 
+    height: 100%;
+}
+
+.content {
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 2em;
+}
+
+.content p {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.start-button {
+    font-family: ModernDOS-2;
+    font-size: 20px;
+    animation-name: Start-Flash;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: green;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button-container {
+    font-family: ModernDOS-2;
+    font-size: 20px;
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+    gap: 10px; 
+    width: 500px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.button, #enter {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    border: 2px solid green;
+    color: green;
+    text-decoration: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.button:focus,
+.button:hover,
+#enter:hover {
+    background-color: green;
+    color: black;
+}
+
+#enter {
+    width: 156px; 
+}
+
+@keyframes Start-Flash {
+    0%, 25% {background-color: rgb(3, 255, 3); color: rgb(0, 0, 0);}
+    100% {background-color: black; color: rgb(3, 255, 3);}
+}
+
+@font-face {
+    font-family: ModernDOS-1 ;
+    src: url(/Users/haozhengyang/Desktop/Interaction-Studio/Projects/Projet-1-Stories_as_Networks/Font/ModernDOS8x8.ttf);
+
+    font-family: ModernDOS-2 ;
+    src: url(/Users/haozhengyang/Desktop/Interaction-Studio/Projects/Projet-1-Stories_as_Networks/Font/ModernDOS9x16.ttf);
+
+
+}

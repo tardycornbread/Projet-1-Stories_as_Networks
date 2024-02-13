@@ -1,0 +1,36 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  background-color: black;
+  color: rgb(3, 255, 3);
+  font-family: 'ModernDOS-2', monospace; /* Ensure a fallback font is specified */
+}
+
+.main_text {
+  display: inline-block;
+  white-space: nowrap; /* Corrected from 'wrap' to 'nowrap' */
+  overflow: hidden;
+  border-right: 3px solid green; 
+
+  animation: typing 5s steps(30), blinkCursor 0.5s step-end infinite alternate;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; } /* Changed from 50 to 100% for full width */
+}
+
+@keyframes blinkCursor {
+  from { border-color: transparent; }
+  to { border-color: rgb(0, 255, 0); }
+}
+
+@font-face {
+  font-family: 'ModernDOS-1';
+  src: url('/Users/haozhengyang/Desktop/Interaction-Studio/Projects/Projet-1-Stories_as_Networks/Font/ModernDOS8x8.ttf'); /* Update the path to a relative or absolute URL accessible by your web server */
+}
+
+@font-face {
+  font-family: 'ModernDOS-2';
+  src: url('/Users/haozhengyang/Desktop/Interaction-Studio/Projects/Projet-1-Stories_as_Networks/Font/ModernDOS9x16.ttf'); /* Update the path similarly */
+}

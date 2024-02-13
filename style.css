@@ -85,10 +85,10 @@ body, html {
 
 @font-face {
     font-family: ModernDOS-1 ;
-    src: url(/Font/ModernDOS8x8.ttf);
+    src: url(Font/ModernDOS8x8.ttf);
 
     font-family: ModernDOS-2 ;
-    src: url(/Font/ModernDOS9x16.ttf);
+    src: url(Font/ModernDOS9x16.ttf);
 
 
 }

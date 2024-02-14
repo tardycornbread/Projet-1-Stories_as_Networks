@@ -26,11 +26,11 @@ body, html {
 }
 
 @font-face {
-  font-family: 'ModernDOS-1';
-  src: url('/Users/haozhengyang/Desktop/Interaction-Studio/Projects/Projet-1-Stories_as_Networks/Font/ModernDOS8x8.ttf'); /* Update the path to a relative or absolute URL accessible by your web server */
-}
+  font-family: ModernDOS-1 ;
+  src: url(Font/ModernDOS8x8.ttf);
 
-@font-face {
-  font-family: 'ModernDOS-2';
-  src: url('/Users/haozhengyang/Desktop/Interaction-Studio/Projects/Projet-1-Stories_as_Networks/Font/ModernDOS9x16.ttf'); /* Update the path similarly */
+  font-family: ModernDOS-2 ;
+  src: url(Font/ModernDOS9x16.ttf);
+
+
 }

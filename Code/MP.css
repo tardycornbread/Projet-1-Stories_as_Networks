@@ -3,21 +3,20 @@ body, html {
   margin: 0;
   background-color: black;
   color: rgb(3, 255, 3);
-  font-family: 'ModernDOS-2', monospace; /* Ensure a fallback font is specified */
+  font-family: 'ModernDOS-2', monospace; 
 }
 
 .main_text {
   display: inline-block;
-  white-space: nowrap; /* Corrected from 'wrap' to 'nowrap' */
+  white-space: nowrap; 
   overflow: hidden;
   border-right: 3px solid green; 
-
   animation: typing 5s steps(30), blinkCursor 0.5s step-end infinite alternate;
 }
 
 @keyframes typing {
   from { width: 0; }
-  to { width: 100%; } /* Changed from 50 to 100% for full width */
+  to { width: 100%; } 
 }
 
 @keyframes blinkCursor {

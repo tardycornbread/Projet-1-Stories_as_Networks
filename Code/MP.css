@@ -134,3 +134,10 @@ button {
 
 
 }
+
+@media (max-width: 768px) {
+  .main_container {
+    grid-template-columns: 1fr; /* Stack the columns on smaller screens */
+  }
+
+}

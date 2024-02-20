@@ -8,49 +8,129 @@
   src: url('Font-Code/ModernDOS9x16.ttf');
 }
 
+
 body, html {
   height: 100%;
   margin: 0;
   background-color: black;
   color: rgb(3, 255, 3);
-  font-family: 'ModernDOS-2', monospace;
+  font-family: 'ModernDOS-2';
 }
 
+.main_container{
+  
+  display:grid;
+  grid-template-columns: 2fr 1fr;
+
+
+
+
+}
+
+
 .main_text {
-  margin: 20px;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
+  border: 2px solid rgb(3, 255, 3);
+  border-radius: 15px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  overflow-y: scroll;
+  height: 600px;
+  margin-top: 30px;
+  margin-left: 25px;
+  background-color: #000000;
+  padding: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+ 
+}
+
+.section_container{
+  display: grid;
+  grid-auto-columns: 1fr;
+  place-items: center; 
+  border: 2px solid rgb(3, 255, 3);
+  border-radius: 30px;
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-right: 20px;
+
 }
 
 .line {
-  overflow: hidden;
-  white-space: wrap;
-  border-right: 3px solid green; /* Cursor */
-  width: 0;
-  /* Adjust the typing animation duration if needed */
-  animation: typing 5s steps(30) forwards, blinkCursor 0.75s step-end infinite alternate;
+  overflow: visible;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  width: 500px;
 }
 
-/* Adjust the animation-delay for each line */
-.main_text .line:nth-child(1) {
-  animation-delay: 0s, 5s; /* blinkCursor starts after typing ends */
+.button-container {
+  display: grid; 
+  justify-content: center; 
+  gap: 10px;
+  margin-top: 20px;
+  grid-auto-flow: column; 
 }
 
-.main_text .line:nth-child(2) {
-  animation-delay: 5s, 10s; /* Delay adjusted for sequential appearance */
+button {
+  font-family: 'ModernDOS-2';
+  width: 60px;
+  height: 60px;
+  background-color: black;
+  border: 2px solid green;
+  color: green;
+  text-decoration: none;
+  font-size: 20px;
+  cursor: pointer;
 }
 
-.main_text .line:nth-child(3) {
-  animation-delay: 10s, 15s; /* Delay adjusted for sequential appearance */
+.button, #resetButton {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  margin-left: 10%;
+  width: 90px;
+  height: 90px;
+  background-color: black;
+  border: 2px solid green;
+  border-radius: 90px;
+  color: green;
+  text-decoration: none;
+  font-size: 1.5em;
+  cursor: pointer;
 }
 
-@keyframes typing {
-  from { width: 0; }
-  to { width: 100%; }
+
+.section{
+  padding: 10px;
+  border: 1px solid green;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  height: 10%;
+  width: 50%;
+  background-color: black;
+  color: rgb(3, 255, 3);
+  font-family: 'ModernDOS-2';
+  text-align: center; 
+  
 }
 
-@keyframes blinkCursor {
-  from { border-color: transparent; }
-  to { border-color: rgb(0, 255, 0); }
+#end{
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  margin-left: 10%;
+  margin-top: 10px;
+  width: 90px;
+  height: 90px;
+  background-color: black;
+  border: 2px solid green;
+  border-radius: 90px;
+  color: green;
+  text-decoration: none;
+  font-size: 1.5em;
+  cursor: pointer;
+
+
+
 }

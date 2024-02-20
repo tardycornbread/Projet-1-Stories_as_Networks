@@ -67,10 +67,11 @@ body, html {
 
 .button-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Adjust the number 4 based on how many buttons you want per row */
+  grid-template-columns: repeat(4, 1fr); 
   gap: 1px;
   margin-top: 20px;
-  /* Remove the justify-content property if it's not needed */
+  margin-left: 20px;
+  
 }
 
 button {
@@ -140,9 +141,9 @@ button {
 @media (max-width: 768px) {
   .main_container {
     display: grid;
-    grid-template-rows: auto auto; /* Two rows */
-    grid-template-columns: 1fr 1fr; /* Two columns, each taking half of the container's width */
-    gap: 10px; /* Optional: Adds some space between grid items */
+    grid-template-rows: auto auto; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 10px; 
   }
 
   .main_text{
@@ -158,6 +159,25 @@ button {
 
 
   }
+  .button-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 1px;
+    margin-top: 20px;
+    
+  }
+
+  button {
+  font-family: 'ModernDOS-2';
+  width: 60px;
+  height: 60px;
+  background-color: black;
+  border: 2px solid green;
+  color: green;
+  text-decoration: none;
+  font-size: 20px;
+  cursor: pointer;
+}
 
 
   

@@ -34,12 +34,14 @@ body, html {
   display: grid;
   grid-template-rows: 1fr 1fr;
   overflow-y: scroll;
+  overflow-x: hidden;
   height: 600px;
   margin-top: 30px;
   margin-left: 25px;
   background-color: #000000;
   padding: 5px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  
 
  
 }
@@ -64,11 +66,11 @@ body, html {
 }
 
 .button-container {
-  display: grid; 
-  justify-content: center; 
-  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Adjust the number 4 based on how many buttons you want per row */
+  gap: 1px;
   margin-top: 20px;
-  grid-auto-flow: column; 
+  /* Remove the justify-content property if it's not needed */
 }
 
 button {
@@ -137,7 +139,33 @@ button {
 
 @media (max-width: 768px) {
   .main_container {
-    grid-template-columns: 1fr; /* Stack the columns on smaller screens */
+    display: grid;
+    grid-template-rows: auto auto; /* Two rows */
+    grid-template-columns: 1fr 1fr; /* Two columns, each taking half of the container's width */
+    gap: 10px; /* Optional: Adds some space between grid items */
   }
+
+  .main_text{
+
+    grid-column: 1 / -1;
+  }
+
+  .line {
+
+    max-width: 80%;
+
+
+
+
+  }
+
+
+  
+
+
+
+
+
+
 
 }

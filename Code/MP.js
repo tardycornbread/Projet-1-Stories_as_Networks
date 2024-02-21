@@ -41,4 +41,14 @@ document.addEventListener('DOMContentLoaded', function() {
     
         sections[index].focus();
     });
+
+    
+    
+
+
+
+
+
+
 });
+
